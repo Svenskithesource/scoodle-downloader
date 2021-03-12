@@ -8,3 +8,6 @@ First of all add TamperMonkey to your browser. Then install [this](https://greas
 `pip install -r requirements.txt`
 
 `python main.py`
+
+## Disclaimer
+This is for education purposes only. I am not responsible for anything done with this.
