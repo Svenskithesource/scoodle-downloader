@@ -1,4 +1,4 @@
-import requests, os, re
+import requests, os, re, shutil
 from PIL import Image
 
 
@@ -60,7 +60,7 @@ def convert_pdf(path="pages", suffix="_corrected", suffix_correction="_correctio
     pdf = images[0]
     pdf.save(fn, "PDF", resolution=100.0, save_all=True, append_images=images[1:])
     if delete_img:
-        os.rmdir(path)
+        shutil.rmtree(path)
 
 book = input("The book pdf url (end with /): ")
 correction = input("The correction pdf url (end with /): ")
